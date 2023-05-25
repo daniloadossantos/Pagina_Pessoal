@@ -25,7 +25,7 @@ body {
 
 .introduction {
 	display: flex;
-	margin: 10% 15%;
+	margin: 5% 15%;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -65,21 +65,28 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	gap: 32px;
+	gap: 30px;
 }
 
 .btn_link_social {
 	/* background-color: #22d4fd; */
+	display: flex;
+	justify-content: center;
+	gap: 16px;
 	width: 320px;
 	text-align: center;
 	border-radius: 8px;
 	border: 2px solid #22d4fd;
-	padding: 20px 0;
+	padding: 21.5px 0;
 	font-size: 1.2em;
 	text-decoration: none;
 	color: #f6f6f6;
 	font-family: "Montserrat Alternates", sans-serif;
 	font-weight: 600;
+}
+
+.btn_link_social:hover {
+	background-color: #252426;
 }
 
 .profile-photo {
