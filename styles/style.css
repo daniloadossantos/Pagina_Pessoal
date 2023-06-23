@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+
+@media (max-width: 1200px) {
+	.header_main {
+		padding: 10%;
+	}
+
+	.header_menu {
+		justify-content: center;
+	}
+
+	.introduction {
+		flex-direction: column-reverse;
+	}
+}
+
+:root {
+	--cor-primaria: #16213e;
+	--cor-secundaria: #e7f6f2;
+	--cor-terciaria: #a5c9ca;
+	--cor-hover: #ffa41b;
+
+	--font-primaria: "Krona One", sans-serif;
+	--font-secundaria: "Montserrat", sans-serif;
+
+	--font-size-titulo: 2.25rem;
+	--font-size-texto: 1.2rem;
+	--font-size-menu: 1.25rem;
+	--font-size-descricao: 0.9rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--cor-primaria);
+	box-sizing: border-box;
+	color: var(--cor-secundaria);
+}
+
+.header_main {
+	padding: 2% 0% 0% 15%;
+}
+
+.header_menu {
+	display: flex;
+	justify-content: flex-start;
+	gap: 6%;
+}
+
+.header_menu :hover {
+	text-decoration: underline;
+}
+
+.header_menu_link {
+	font-family: var(--font-secundaria);
+	font-size: var(--font-size-menu);
+	font-weight: 400;
+	color: var(--cor-terciaria);
+	text-decoration: none;
+}
+
+.introduction {
+	display: flex;
+	padding: 5% 15%;
+	align-items: center;
+	justify-content: space-between;
+	gap: 82px;
+}
+
+.introduction_content {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.featured_title {
+	color: var(--cor-terciaria);
+	font-weight: 600;
+}
+
+.introduction_title {
+	font-family: var(--font-primaria);
+	font-size: var(--font-size-titulo);
+	font-weight: 500;
+}
+
+.introduction_text {
+	font-size: var(--font-size-texto);
+	font-family: var(--font-secundaria);
+}
+
+.btn_link {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+
+.introduction_links {
+	font-size: 1.1em;
+	font-family: var(--font-primaria);
+	font-weight: 400;
+}
+
+.btn_link_social {
+	/* background-color: #22d4fd; */
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	width: 50%;
+	text-align: center;
+	border-radius: 8px;
+	border: 2px solid var(--cor-terciaria);
+	padding: 18.5px 0;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: var(--cor-secundaria);
+	font-family: var(--font-secundaria);
+	font-weight: 600;
+}
+
+.btn_link_social:hover {
+	background-color: var(--cor-hover);
+}
+
+.profile_photo {
+	/*height: 380px;*/
+	width: 50%;
+}
+
+/*PÁGINA SOBRE MIM */
+.cv_info {
+	font-size: 1em;
+	font-family: var(--font-secundaria);
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 5% 8%;
+}
+
+.content_text {
+	font-size: var(--font-size-texto);
+	margin-left: 2.5rem;
+}
+
+.content_text_description {
+	font-size: var(--font-size-descricao);
+}
+
+/*RODAPE*/
+#footer_content {
+	background-color: var(--cor-terciaria);
+	font-size: var(--font-size-texto);
+	font-family: var(--font-secundaria);
+	font-weight: 400;
+	color: var(--cor-primaria);
+	text-align: center;
+	padding: 24px;
+	margin-top: 6%;
+}

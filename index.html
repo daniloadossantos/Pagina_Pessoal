@@ -5,10 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
-		<link rel="stylesheet" href="./assets/style.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 	<body>
-		<header>
+		<header class="header_main">
+			<nav class="header_menu">
+				<a class="header_menu_link" href="index.html">Home</a>
+				<a class="header_menu_link" href="about.html">Apresentação</a>
+				<a class="header_menu_link" href="#footer_content">Contato</a>
+			</nav>
+		</header>
 			<main class="introduction">
 				<section class="introduction_content">
 					<h1 class="introduction_title">
@@ -21,7 +27,7 @@
 						Python. <br /><br />Vamos conversar?
 					</p>
 					<div class="btn_link">
-						<h2 class="introduction_links">Acesse minhas redes!</h2>
+						<h2 class="introduction_links">Acesse minhas redes:</h2>
 						<a
 							class="btn_link_social"
 							href="https://www.linkedin.com/in/daniloasantos/"
@@ -42,11 +48,11 @@
 				<img
 					src="./assets/img/perfil.jfif"
 					alt="Foto perfil de Danilo"
-					class="profile-photo"
+					class="profile_photo"
 				/>
 			</main>
-		</header>
-		<footer class="footer_content">
+		
+		<footer id="footer_content">
 			<p>Desenvolvido por <strong>Danilo Alves dos Santos.</p>
 		</footer>
 
