@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
 
-@media (max-width: 1200px) {
-	.header_main {
-		padding: 10%;
-	}
-
-	.header_menu {
-		justify-content: center;
-	}
-
-	.introduction {
-		flex-direction: column-reverse;
-	}
-}
-
 :root {
 	--cor-primaria: #16213e;
 	--cor-secundaria: #e7f6f2;
@@ -71,7 +57,7 @@ body {
 }
 
 .introduction_content {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
@@ -86,11 +72,13 @@ body {
 	font-family: var(--font-primaria);
 	font-size: var(--font-size-titulo);
 	font-weight: 500;
+	margin-top: 2%;
 }
 
 .introduction_text {
 	font-size: var(--font-size-texto);
 	font-family: var(--font-secundaria);
+	width: 80%;
 }
 
 .btn_link {
@@ -145,6 +133,7 @@ body {
 .content_text {
 	font-size: var(--font-size-texto);
 	margin-left: 2.5rem;
+	font-family: var(--font-secundaria);
 }
 
 .content_text_description {
@@ -161,4 +150,23 @@ body {
 	text-align: center;
 	padding: 24px;
 	margin-top: 6%;
+}
+
+@media (max-width: 1200px) {
+	.header_main {
+		padding: 10%;
+	}
+
+	.header_menu {
+		justify-content: center;
+	}
+
+	.introduction {
+		flex-direction: column-reverse;
+		padding: 5%;
+	}
+
+	.introduction_content {
+		width: auto;
+	}
 }
