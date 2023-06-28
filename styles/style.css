@@ -9,9 +9,9 @@
 	--font-primaria: "Krona One", sans-serif;
 	--font-secundaria: "Montserrat", sans-serif;
 
-	--font-size-titulo: 2.25rem;
+	--font-size-titulo: 1.8rem;
 	--font-size-texto: 1.2rem;
-	--font-size-menu: 1.25rem;
+	--font-size-menu: 1.2rem;
 	--font-size-descricao: 0.9rem;
 }
 
@@ -54,6 +54,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	gap: 82px;
+	flex-direction: column-reverse;
 }
 
 .introduction_content {
@@ -100,7 +101,7 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 16px;
-	width: 50%;
+	width: 24%;
 	text-align: center;
 	border-radius: 8px;
 	border: 2px solid var(--cor-terciaria);
@@ -118,18 +119,10 @@ body {
 
 .profile_photo {
 	/*height: 380px;*/
-	width: 50%;
+	width: 40%;
 }
 
 /*PÁGINA SOBRE MIM */
-.cv_info {
-	font-size: 1em;
-	font-family: var(--font-secundaria);
-	display: flex;
-	flex-direction: column;
-	margin: 0 0 5% 8%;
-}
-
 .content_text {
 	font-size: var(--font-size-texto);
 	margin-left: 2.5rem;
@@ -161,12 +154,33 @@ body {
 		justify-content: center;
 	}
 
+	.header_menu_link
+
 	.introduction {
-		flex-direction: column-reverse;
+		flex-flow: column-reverse wrap;
 		padding: 5%;
 	}
 
 	.introduction_content {
 		width: auto;
+		
 	}
+
+	.introduction_title {
+	font-family: var(--font-primaria);
+	font-size: 1rem;
+	font-weight: 500;
+	margin-top: 2%;
+}
+
+.introduction_text {
+	font-size: 0.9rem;
+	font-family: var(--font-secundaria);
+	width: auto;
+}
+
+.content_text{
+	font-size: 0.8rem;
+	margin: 0 7%;
+}
 }
