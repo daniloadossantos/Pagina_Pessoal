@@ -8,43 +8,123 @@
 		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 	<body>
-		<header class="header_main">
-			<nav class="header_menu">
-				<a class="header_menu_link" href="index.html">Home</a>
-				<a class="header_menu_link" href="about.html">Apresentação</a>
-				<a class="header_menu_link" href="#footer_content">Contato</a>
+		<header class="header__main">
+			
+			<nav class="header__menu">
+				<a class="header__menu__link" href="#Home">Home</a>
+				<a class="header__menu__link" href="#About">Apresentação</a>
+				<a class="header__menu__link" href="#Portfolio">Portfolio</a>
 			</nav>
 		</header>
 			<main class="introduction">
-				<section class="introduction_content">
-					<h1 class="introduction_title">
-						Seja <strong class="featured_title">bem-vindo!</strong>
-					</h1>
-					<p class="introduction_text">
-						Olá! Sou <strong>Danilo Santos</strong>, sou estudante do curso de
-						Análise e Desenvolvimento de Sistemas, na FATEC-SP. Tenho
-						conhecimentos básicos em HTML5, CSS3 e linguagem JavaScript e
-						Python. <br /><br />Vamos conversar?
-					</p>
-					<div class="btn_link">
-						<h2 class="introduction_links">Acesse minhas redes:</h2>
+				<section class="introduction__content">
+					<div id= "Home" class="container__introduction__presentation">
+						<div>
+							<h1 class="introduction__title">Seja <strong class="featured__title">bem-vindo!</strong></h1>
+							<p class="introduction__text">
+							Olá! Sou <strong>Danilo Santos</strong>, estudo desenvolvimento Web e Programação. <br /><br />
+						</div>
+						
+						<img src="./assets/img/dev_cpu.svg" alt="Ilutração Dev" class="dev__img"/>
+				</div>
+				</section>
+
+				<section class="introduction__presentation">
+					<h2 id="About" class="introduction__title">Resumo</h2>
+					
+					<div class="container__introduction">
+						<div  class="container__introduction__photo">
+							<img src="./assets/img/perfil.jfif" alt="Foto perfil de Danilo" class="profile__photo"/>
+						</div>
+					
+					<div class="summary">
+						<ul class="brief__summary">
+							<li class="summary__item">Cursando Análise e Desenvolvimento de Sistemas <abbr title="Faculdade de Tecnologia de São Paulo">(FATEC-SP)</abbr></li>
+
+							<li class="summary__item">Estudante de Programação e Desenvolvimento Web</li>
+							
+						</ul>
+										
+						<br/><br/>Vamos conversar?
+									
+						<h2 class="introduction__links">Acesse minhas redes:</h2>
 				
-						<a class="btn_link_social" href="https://www.linkedin.com/in/daniloasantos/">
-							<source srcset="./assets/icon/linkedin.png" media="(min-width: 1200px)">
-							<img src="./assets/icon/icons8-linkedin-23(-ldpi).png" alt="logo Linkedin"/>Linkedin
-						</a>
+						<div class="btn__link">
+							<a class="btn__link__social" href="https://www.linkedin.com/in/daniloasantos/">
+								<source srcset="./assets/icon/linkedin.png" media="(min-width: 1200px)">
+								<img src="./assets/icon/icons8-linkedin.svg" alt="logo Linkedin"/>
+								<p class="link__social__text">LinkedIn</p></a>
 
-						<a class="btn_link_social" href="https://github.com/daniloadossantos">
-							<source srcset="./assets/icon/github.png" media="(min-width: 1200px)">
-							<img src="./assets/icon/icons8-github-23(-ldpi).png" alt="logo GitHub"/>GitHub
-						</a>
+							<a class="btn__link__social" href="https://github.com/daniloadossantos">
+								<source srcset="./assets/icon/github.png" media="(min-width: 1200px)">
+								<img src="./assets/icon/icons8-github.svg" alt="logo GitHub"/>
+								<p class="link__social__text">GitHub</p></a>
 
+						</div>
+					</div>
 					</div>
 				</section>
-				<img src="./assets/img/perfil.jfif" alt="Foto perfil de Danilo" class="profile_photo"/>
+
+				<section class="hard__skills">
+					<div class="hard__skills container">
+						<h2 class="introduction__title">Conhecimentos Técnicos</h2>
+					</div>
+					
+					<div class="card__hard__skills">
+						<img src="./assets/icon/html-5-logo-svgrepo-com.svg" class="img__hard__skills">
+						<img src="./assets/icon/css-svgrepo-com.svg" class="img__hard__skills">
+						<img src="./assets/icon/javascript-svgrepo-com.svg" class="img__hard__skills">
+						<img src="./assets/icon/python-svgrepo-com.svg" class="img__hard__skills">
+						<img src="./assets/icon/C_Programming_Language.svg" class="img__hard__skills">
+					</div>
+				</section>
+
+				<section id="Portfolio">
+						<div class="portfolio">
+							<h2 class="introduction__title">Portfolio</h2>
+						</div>
+						<div>
+							<h3>Em andamento...</h3>
+						</div>
+						<!--	
+							<div class="card">						
+								<div class="card__image"></div>
+								<div class="card__descr-wrapper">
+										
+    							<p class="card__title">Projeto Alura-Flix</p>
+									<p class="card__description">Projeto realizado em conjunto com as aulas Alura</p>
+								<div class="card__links">
+									<div class="card__links links">
+										<img src="./assets/icon/preview.svg" alt="preview">
+										<a class="link__card" href="https://portfolio-alura-flix.vercel.app" target="_blank">Preview</a>
+									</div>
+
+									<div class="card__links links">
+										<img src="./assets/icon/icons8-github (1).svg" alt="logo GitHub">
+										<a class="link__card" href="https://github.com/daniloadossantos/portfolio/blob/main/Projeto%201%20-%20Alura%20Plus/index.html" target="_blank">Code</a>
+									</div>
+								</div>
+								</div>
+							</div>
+
+
+								
+	    					<div class="category">
+									<div>
+    						<div class="content__text__description">Projeto realizado em conjunto com as aulas Alura</div>
+
+								<div class="card-image"></div>
+	    					<div class="category">
+									<a class="link__card" href="https://portfolio-seven-amber-35.vercel.app/" target="_blank">Calculadora</a>
+								<div>
+    						<div class="content__text__description">Projeto de calculadora funcional</div>
+							</div>
+								</div>
+							</div>
+				</section>-->
 			</main>
 		
-		<footer id="footer_content">
+		<footer id="footer__content">
 			<p>Desenvolvido por <strong>Danilo Alves dos Santos.</p>
 		</footer>
 

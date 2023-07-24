@@ -1,0 +1,9 @@
+.content_text {
+	font-size: var(--font-size-texto);
+	margin-left: 2.5rem;
+	font-family: var(--font-secundaria);
+}
+
+.content_text_description {
+	font-size: var(--font-size-descricao);
+}

@@ -1,18 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400;500;600;700&display=swap");
+
+@import url("./rodape.css");
+@import url("./about-me.css");
+@import url("./card.css");
 
 :root {
-	--cor-primaria: #16213e;
+	--cor-primaria: linear-gradient(
+		63deg,
+		rgba(2, 45, 62, 1) 0%,
+		rgba(1, 1, 8, 1) 60%,
+		rgba(0, 212, 255, 1) 100%
+	);
 	--cor-secundaria: #e7f6f2;
-	--cor-terciaria: #a5c9ca;
-	--cor-hover: #ffa41b;
+	--cor-terciaria: #088395;
+	--cor-hover: #064663;
 
-	--font-primaria: "Krona One", sans-serif;
-	--font-secundaria: "Montserrat", sans-serif;
+	--font-primaria: "Tektur", sans-serif;
+	--font-secundaria: "Roboto", sans-serif;
 
-	--font-size-titulo: 1.8rem;
-	--font-size-texto: 1.2rem;
+	--font-size-titulo: 2.4rem;
+	--font-size-introducao: 1.6rem;
+	--font-size-texto: 1rem;
 	--font-size-menu: 1.2rem;
 	--font-size-descricao: 0.9rem;
+
+	--font-color: #323232;
+	--bg-color: #e0e0e0;
 }
 
 * {
@@ -20,27 +33,49 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	background-color: var(--cor-primaria);
+	background: var(--cor-primaria);
 	box-sizing: border-box;
+	color: var(--cor-secundaria);
+	font-family: var(--font-primaria);
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+section {
+	height: 100vh;
+	width: 100%;
+}
+
+.header__main {
+	padding: 2% 0% 0% 15%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+	gap: 20%;
+	padding-left: 50px;
+	background: url("../assets/img/Prata\ transp.png") no-repeat;
+}
+
+.header__menu__link:hover {
+	text-decoration: underline;
 	color: var(--cor-secundaria);
 }
 
-.header_main {
-	padding: 2% 0% 0% 15%;
-}
-
-.header_menu {
-	display: flex;
-	justify-content: flex-start;
-	gap: 6%;
-}
-
-.header_menu :hover {
-	text-decoration: underline;
-}
-
-.header_menu_link {
+.header__menu__link {
 	font-family: var(--font-secundaria);
 	font-size: var(--font-size-menu);
 	font-weight: 400;
@@ -54,58 +89,105 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	gap: 82px;
-	flex-direction: column-reverse;
+	flex-direction: column;
 }
 
-.introduction_content {
+.introduction__content {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	height: 100vh;
 }
 
-.featured_title {
+.dev__img {
+	width: 40%;
+}
+
+.container__introduction__presentation {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	height: 100vh;
+}
+
+.featured__title {
 	color: var(--cor-terciaria);
 	font-weight: 600;
 }
 
-.introduction_title {
+.introduction__title {
 	font-family: var(--font-primaria);
 	font-size: var(--font-size-titulo);
 	font-weight: 500;
-	margin-top: 2%;
+	margin: 8% 0;
+	padding-top: 60px;
 }
 
-.introduction_text {
-	font-size: var(--font-size-texto);
+.introduction__text {
+	font-size: var(--font-size-introducao);
 	font-family: var(--font-secundaria);
 	width: 80%;
+	line-height: 2.5rem;
 }
 
-.btn_link {
+#About {
+	display: block;
+}
+
+.container__introduction {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+}
+
+.introduction__presentation {
+	margin: 5% 0;
+	padding: 3% 0;
+	gap: 7%;
+	align-items: center;
+	font-family: var(--font-secundaria);
+}
+
+.container__introduction__photo {
+	width: 45%;
+}
+
+.profile__photo {
+	width: 80%;
+	border: 2px solid;
+	border-radius: 8px;
+}
+
+.brief__summary,
+.ordered__item {
+	margin-left: 25px;
+	line-height: 1.5rem;
+}
+
+.btn__link {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 	gap: 30px;
+	margin-top: 10px;
 }
 
-.introduction_links {
+.introduction__links {
 	font-size: 1.1em;
-	font-family: var(--font-primaria);
-	font-weight: 400;
+	font-family: var(--font-secundaria);
+	font-weight: 600;
 }
 
-.btn_link_social {
+.btn__link__social {
 	/* background-color: #22d4fd; */
 	display: flex;
 	justify-content: center;
 	gap: 16px;
-	width: 24%;
+	width: auto;
 	text-align: center;
 	border-radius: 8px;
 	border: 2px solid var(--cor-terciaria);
-	padding: 18.5px 0;
+	padding: 18.5px 13px;
 	font-size: 1.2em;
 	text-decoration: none;
 	color: var(--cor-secundaria);
@@ -113,74 +195,89 @@ body {
 	font-weight: 600;
 }
 
-.btn_link_social:hover {
+.btn__link__social:hover {
 	background-color: var(--cor-hover);
 }
 
-.profile_photo {
-	/*height: 380px;*/
-	width: 40%;
+#portfolio__container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
-/*PÁGINA SOBRE MIM */
-.content_text {
-	font-size: var(--font-size-texto);
-	margin-left: 2.5rem;
-	font-family: var(--font-secundaria);
+.hard__skills .container {
+	display: flex;
 }
 
-.content_text_description {
-	font-size: var(--font-size-descricao);
+.hard__skills__title {
+	display: flex;
 }
 
-/*RODAPE*/
-#footer_content {
-	background-color: var(--cor-terciaria);
-	font-size: var(--font-size-texto);
-	font-family: var(--font-secundaria);
-	font-weight: 400;
-	color: var(--cor-primaria);
-	text-align: center;
-	padding: 24px;
-	margin-top: 6%;
+.card__hard__skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 4% 0 0 0;
 }
 
-@media (max-width: 1200px) {
-	.header_main {
+.img__hard__skills {
+	height: 8%;
+	width: 8%;
+}
+
+.portfolio {
+	display: flex;
+	justify-content: start;
+}
+
+@media screen and (max-width: 1024px) {
+	.header__main {
 		padding: 10%;
 	}
 
-	.header_menu {
+	.header__menu {
 		justify-content: center;
 	}
 
-	.header_menu_link
-
-	.introduction {
+	.header__menu__link .introduction {
 		flex-flow: column-reverse wrap;
 		padding: 5%;
 	}
 
-	.introduction_content {
+	.introduction__content {
 		width: auto;
-		
 	}
 
-	.introduction_title {
-	font-family: var(--font-primaria);
-	font-size: 1rem;
-	font-weight: 500;
-	margin-top: 2%;
-}
+	.introduction__content img {
+		margin: auto;
+	}
 
-.introduction_text {
-	font-size: 0.9rem;
-	font-family: var(--font-secundaria);
-	width: auto;
-}
+	.introduction__title {
+		font-family: var(--font-primaria);
+		font-size: 1rem;
+		font-weight: 500;
+		margin-top: 2%;
+	}
 
-.content_text{
-	font-size: 0.8rem;
-	margin: 0 7%;
-}
+	.introduction__text {
+		font-size: 0.9rem;
+		font-family: var(--font-secundaria);
+		width: auto;
+	}
+
+	.content__text {
+		font-size: 0.8rem;
+		margin: 0 7%;
+	}
+
+	.btn__link__social {
+		width: auto;
+		padding: 1em;
+		font-size: var(--font-size-descricao);
+	}
+
+	.link__social__text {
+		margin: auto;
+		box-sizing: content-box;
+	}
 }
