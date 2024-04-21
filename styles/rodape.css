@@ -3,7 +3,7 @@
 	font-size: var(--font-size-texto);
 	font-family: var(--font-secundaria);
 	font-weight: 400;
-	color: var(--cor-primaria);
+	color: #000;
 	text-align: center;
 	padding: 24px;
 	margin-top: 6%;
