@@ -57,7 +57,8 @@ header > img {
 .header__main {
 	display: flex;
 	justify-content: flex-start;
-	padding:2%;
+	padding:.5%;
+	z-index:1000;
 }
 
 .header__menu {
@@ -418,9 +419,6 @@ main {
 		box-sizing: content-box;
 	}
 
-	.hard__skills{
-		display: contents;
-	}
 
 	.cards_total{
 		flex-wrap: wrap;
@@ -428,7 +426,7 @@ main {
 	}
 
 	#footer__content{
-		position:fixed;
+		display:none;
 	}
 }
 
